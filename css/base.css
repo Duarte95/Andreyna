@@ -1,0 +1,25 @@
+html {
+
+    height: 100vh;
+    background: linear-gradient(135deg, #F52C03, #F8846C);
+    background-repeat: no-repeat;
+    
+}
+
+.cuerpo {
+  
+  display: grid;
+  height: calc(100vh - 154px);
+  grid-template-columns: 1fr;
+  place-content: center;
+  
+}
+
+.creditos {
+  
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  
+}

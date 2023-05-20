@@ -1,0 +1,35 @@
+/*.cabecera {
+
+  display: flex;
+  margin-bottom: 10px;
+  
+}*/
+
+.logo1, .logo2 {
+  
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  
+}
+
+.contenedor_titulos {
+  
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  
+}
+
+.titulo{
+  
+  font-size: 50px;
+  
+}
+
+.subtitulo {
+  
+  font-weight: bold;
+  text-align: center;
+  
+}

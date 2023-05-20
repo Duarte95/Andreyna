@@ -1,0 +1,59 @@
+.departamentos {
+  
+  width: 60px;
+  height: 40px;
+  background: grey;
+  border-radius: 5px;
+  border: 3px solid orange;
+  display: grid;
+  
+}
+
+.formulario {
+  
+  width: 80%;
+  place-self: center;
+  
+}
+
+.label {
+  
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  
+}
+
+.usuario_ingreso, .clave_ingreso, .boton_ingreso {
+  
+  padding: 10px;
+  margin: 5px 0px 15px 0px;
+  border-radius: 10px;
+  border-style: none;
+  outline-style: none;
+  width: calc(100% - 20px);
+  
+}
+
+.boton_ingreso {
+  
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+  width: 40%;
+  margin: 20px 30% 0px 30%;
+  
+}
+
+.boton_ingreso:hover {
+  
+  cursor: pointer;
+  
+}
+
+.boton_ingreso:active {
+  
+  background-color: #505050;
+  color: white;
+  
+}

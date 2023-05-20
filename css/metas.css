@@ -1,0 +1,64 @@
+.formulario {
+  
+  width: 80%;
+  place-self: center;
+  
+}
+
+.label {
+  
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  
+}
+
+.metas_actuales, .metas_propuestas, .boton_insertar, .boton_salir {
+  
+  padding: 10px;
+  margin: 5px 0px 15px 0px;
+  border-radius: 10px;
+  border-style: none;
+  outline-style: none;
+  width: calc(100% - 20px);
+  text-align: center;
+  
+}
+
+
+.boton_insertar, .boton_salir{
+  
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+  width: 40%;
+  margin: 20px 30% 0px 30%;
+  
+}
+
+.boton_salir {
+  
+  color: white;
+  border: 2px solid white;
+  background: red;
+  
+}
+
+.boton_insertar:hover, .boton_salir {
+  
+  cursor: pointer;
+  
+}
+
+.boton_insertar:active {
+  
+  background-color: #505050;
+  color: white;
+  
+}
+
+.boton_salir:active {
+  
+  background: darkred;
+  
+}

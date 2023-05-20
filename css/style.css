@@ -1,0 +1,43 @@
+html {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6CB1F8, #2779CF);
+    background-repeat: no-repeat;
+    
+}
+
+.contenedor_nombre {
+  
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  width: 100%;
+  padding: 20px 0px;
+  
+}
+
+.nombre_link {
+  
+  cursor: pointer;
+  
+}
+
+.nombre_logo {
+  
+  font-size: 100px;
+  
+}
+
+.nombre_completo {
+  
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 50px;
+  line-height: 1.5;
+  
+}
