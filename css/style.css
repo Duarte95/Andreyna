@@ -11,33 +11,32 @@ html {
 
 .contenedor_nombre {
   
-  display: flex;
-  justify-content: center;
+  display: grid;
+  place-content: center;
   background-color: white;
-  width: 100%;
+  width: 100vw;
   padding: 20px 0px;
-  
-}
-
-.nombre_link {
-  
-  cursor: pointer;
   
 }
 
 .nombre_logo {
   
   font-size: 100px;
+  cursor: pointer;
+  border-style: none;
+  background: white;
+  width: 100%;
+  height: 100%;
   
 }
 
 .nombre_completo {
   
-  color: white;
+  color: black;
   font-size: 20px;
   font-weight: bold;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 20px;
   line-height: 1.5;
   
 }
