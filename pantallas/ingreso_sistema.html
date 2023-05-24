@@ -4,11 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>Iniciar Sesión</title>
+  
+  <!-- HTML -->
   <link rel="stylesheet" href="../css/reset.css">
-  <link rel="stylesheet" href="../css/cabecera.css">
   <link rel="stylesheet" href="../css/base.css">
-  <link rel="stylesheet" href="../css/autenticacion.css">
-  <title>Document</title>
+  <link rel="stylesheet" href="../css/cabecera.css">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="../css/components/inputAutenticacion.css">
+  <link rel="stylesheet" href="../css/components/botonIniciarSesion.css">
+  
 </head>
 <body>
   <header class="cabecera">
@@ -42,10 +48,10 @@
       <form action="./seccion_metas.html" class="container_formulario">
       
         <label class="label user" for="Usuario">Usuario</label>
-        <input class="usuario_ingreso" type="text" required>
+        <input class="usuario_ingreso" type="text" required data-usuario>
         <label class="label pass" for="Clave">Clave</label>
-        <input class="clave_ingreso" type="password" required>
-        <button class="boton_ingreso" type="submit">INGRESAR</button>
+        <input class="clave_ingreso" type="password" required data-clave>
+        <button class="boton_ingreso" type="submit" data-entrar>INGRESAR</button>
         
       </form>
     </section>
@@ -55,6 +61,8 @@
   <footer class="creditos">
     <p>Derechos reservados - &copy Copy Right 2023 - Antony Duarte </p>
   </footer>
+  
+  <script src="../js/autenticacion.js"></script>
   
 </body>
 </html>

@@ -1,0 +1,25 @@
+.formulario {
+  
+  width: 80%;
+  place-self: center;
+  
+}
+
+.label {
+  
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  
+}
+
+.usuario_ingreso, .clave_ingreso, .boton_ingreso {
+  
+  padding: 10px;
+  margin: 5px 0px 15px 0px;
+  border-radius: 10px;
+  border-style: none;
+  outline-style: none;
+  width: calc(100% - 20px);
+  
+}

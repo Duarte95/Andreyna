@@ -1,0 +1,22 @@
+.boton_insertar, .boton_salir{
+  
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+  width: 40%;
+  margin: 20px 30% 0px 30%;
+  
+}
+
+.boton_insertar:hover, .boton_salir {
+  
+  cursor: pointer;
+  
+}
+
+.boton_insertar:active {
+  
+  background-color: #505050;
+  color: white;
+  
+}

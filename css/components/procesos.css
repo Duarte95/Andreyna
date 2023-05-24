@@ -1,0 +1,20 @@
+.container_procesos {
+  
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.procesos {
+  
+  width: 100px;
+  height: 40px;
+  background-color: white;
+  font-weight: bold;
+  border: 2px solid black;
+  text-align: center;
+  margin-bottom: 30px;
+  
+}
