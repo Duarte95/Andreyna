@@ -1,3 +1,13 @@
+* {
+  user-select: none;
+}
+*::selection {
+  background: none;
+}
+*::-moz-selection {
+  background: none;
+}
+
 html {
 
     height: 100vh;
@@ -9,9 +19,10 @@ html {
 .cuerpo {
   
   display: grid;
-  height: calc(100vh - 154px);
-  grid-template-columns: 1fr;
+  /*height: calc(100% - 174px); me ajusta el cuerpo a maximo el tamaño de altura del dispositivo, es decir que si expando el teclado el cuerpo o main, se contrae*/
+  grid-template-column: repeat(2, 1fr);
   place-content: center;
+  margin: 20px;
   
 }
 

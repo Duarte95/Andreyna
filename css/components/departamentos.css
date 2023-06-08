@@ -1,9 +1,13 @@
+.seccion_departamentos {
+  
+  width: 100%;
+  
+}
+
 .container_departamentos {
   
-  display: flex;
-  flex-wrap: wrap;
-  width: 100vw;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   
 }
 
