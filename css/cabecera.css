@@ -1,6 +1,8 @@
 .cabecera {
+
   display: flex;
   justify-content: space-between;
+
 }
 
 .logo1, .logo2 {
@@ -14,14 +16,8 @@
 
 .contenedor_titulos {
   
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; */
   display: grid;
-  place-content: center;
   margin: 10px;
-  line-height: 1.5;
   
 }
 
@@ -37,6 +33,23 @@
   font-weight: bold;
   text-align: center;
   
+}
+
+@media screen and (min-width: 640px) {
+
+  .logo1, .logo2 {
+    height: 100px;
+    width: 100px;
+  }
+
+  .titulo{
+    font-size: 50px;
+  }
+
+  .subtitulo {
+    font-size: 16px;
+  }
+
 }
 
 @media screen and (min-width: 990px) {

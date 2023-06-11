@@ -13,17 +13,29 @@ html {
     height: 100vh;
     background: linear-gradient(135deg, #6CB1F8, #2779CF);
     background-repeat: no-repeat;
-    
+
+}
+
+hr {
+
+  width: 100%;
+
+}
+
+body {
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
 }
 
 .cuerpo {
-  
-  display: grid;
-  height: calc(100vh - 194px);/* me ajusta el cuerpo a maximo el tamaño de altura del dispositivo, es decir que si expando el teclado el cuerpo o main, se contrae, debe estar en vh ademas de restar lo que sobra*/
-  /* grid-template-column: repeat(2, 1fr); */
-  place-content: center;
-  margin: 20px;
-  
+
+  flex-grow: 1;
+  width: 80%;
+  align-self: center;
+
 }
 
 .creditos {
@@ -32,5 +44,7 @@ html {
   font-weight: bold;
   font-size: 12px;
   text-align: center;
+  margin-top: auto;
+  padding: 10px;
   
 }
