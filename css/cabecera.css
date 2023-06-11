@@ -6,8 +6,8 @@
 
 .logo1, .logo2 {
   
-  height: 50px;
-  width: 50px;
+  height: 70px;
+  width: 70px;
   background-color: white;
   
 }
@@ -17,6 +17,7 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
+  align-items: center;
   
 }
 
