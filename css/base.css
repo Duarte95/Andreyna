@@ -20,7 +20,7 @@ html {
   
   display: grid;
   height: calc(100vh - 194px);/* me ajusta el cuerpo a maximo el tamaño de altura del dispositivo, es decir que si expando el teclado el cuerpo o main, se contrae, debe estar en vh ademas de restar lo que sobra*/
-  grid-template-column: repeat(2, 1fr);
+  /* grid-template-column: repeat(2, 1fr); */
   place-content: center;
   margin: 20px;
   
