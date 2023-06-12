@@ -1,0 +1,16 @@
+.ingreso {
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+  width: 40%;
+  margin: 20px 30% 0px 30%;
+}
+
+.ingreso:hover {
+  cursor: pointer;
+}
+
+.ingreso:active {
+  background-color: #505050;
+  color: white;
+}

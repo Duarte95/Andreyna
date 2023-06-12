@@ -1,0 +1,28 @@
+.formulario {
+
+  margin: auto;
+  width: 80%;
+  max-width: 420px; /*mientras ajusto directamente los inputs*/
+}
+
+.formulario_contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.label {
+  margin-right: 15px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: right;
+}

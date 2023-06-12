@@ -11,10 +11,11 @@
   <link rel="stylesheet" href="../css/base/reset.css">
   <link rel="stylesheet" href="../css/base/base.css">
   <link rel="stylesheet" href="../css/base/cabecera.css">
+  <link rel="stylesheet" href="../css/base/inputs-boton.css">
   <!-- Custom Styles -->
-  <link rel="stylesheet" href="../css/components/inputAutenticacion.css">
-  <link rel="stylesheet" href="../css/components/botonIniciarSesion.css">
+  <link rel="stylesheet" href="../css/components/boton-ingresar.css">
   <link rel="stylesheet" href="../css/components/departamentos.css">
+  <link rel="stylesheet" href="../css/base/formulario.css">
   
 </head>
 
@@ -44,28 +45,43 @@
     
     <section class="seccion_departamentos">
       
-      <div class="container_departamentos">
-        <div class="departamentos"></div>
-        <div class="departamentos"></div>
-        <div class="departamentos"></div>
-        <div class="departamentos"></div>
-        <div class="departamentos"></div>
-      </div>
+        <div class="fila">
+          <div class="departamentos option">
+            Direccion de Apoyo
+          </div>
+          <div class="departamentos option">
+            Direccion de Investigacion
+          </div>
+          <div class="departamentos option">
+            Oficina de Gestion
+          </div>
+        </div>
+
+        <div class="fila">
+          <div class="departamentos option">
+            Direccion de Estimulo Creativo
+          </div>
+          <div class="departamentos option">
+            Oficina de Planeacion y Presupuesto
+          </div>
+        </div>
       
     </section>
     
     <section class="formulario">
-      
-      <form action="./seccion_metas.html" class="container_formulario">
-      
-        <label class="label user" for="Usuario">Usuario</label>
-        <input class="usuario_ingreso" type="text" required data-usuario>
-        <label class="label pass" for="Clave">Clave</label>
-        <input class="clave_ingreso" type="password" required data-clave>
-        <button class="boton_ingreso" type="submit" data-entrar>INGRESAR</button>
-        
+      <form action="./seccion_metas.html" class="formulario_contenedor">
+        <div class="input_wrapper">
+          <label class="label user" for="Usuario">Usuario</label>
+          <input class="input usuario" type="text" required data-usuario>
+        </div>
+        <div class="input_wrapper">
+          <label class="label pass" for="Clave">Clave</label>
+          <input class="input clave" type="password" required data-clave>
+        </div>
+        <button class="boton ingreso" type="submit" data-entrar>INGRESAR</button>
       </form>
     </section>
+    
     
   </main>
   
@@ -74,6 +90,7 @@
   </footer>
   
   <script src="../js/autenticacion.js" type="module"></script>
+  <script src="../js/seleccion.js"></script>
   
 </body>
 </html>

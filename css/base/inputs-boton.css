@@ -1,0 +1,13 @@
+
+.input, .boton {
+  
+  padding: 10px;
+  margin: 5px 0px 15px 0px;
+  border-radius: 10px;
+  border-style: none;
+  outline-style: none;
+  min-width: 120px;
+  width: 80%;
+  max-width: 330px;
+  
+}
