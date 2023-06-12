@@ -10,10 +10,14 @@
 }
 
 .salir {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
   color: white;
   border: 2px solid white;
   background: red;
-  width: 20%;
+  min-width: 120px;
+  max-width: 150px;
 }
 
 .ingreso:hover, .salir:hover{
@@ -28,3 +32,27 @@
 .salir:active {
   background: darkred;
 } 
+
+@media screen and (min-width: 290px){
+  .salir {
+    font-size: 10px;
+    width: 120px;
+  }
+
+}
+
+@media screen and (min-width: 360px){
+  .salir {
+    font-size: 12px;
+    width: 150px;
+  }
+
+}
+
+@media screen and (min-width: 640px){
+  .salir {
+    font-size: 12px;
+    width: 150px;
+  }
+
+}
