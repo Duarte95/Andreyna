@@ -1,5 +1,4 @@
 .formulario {
-
   margin: auto;
   width: 80%;
   max-width: 420px; /*mientras ajusto directamente los inputs*/
@@ -16,7 +15,7 @@
   align-items: center;
   justify-content: right;
   margin-bottom: 10px;
-  width: 100%;
+  width: 400px;
 }
 
 .label {

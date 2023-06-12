@@ -1,0 +1,25 @@
+.icono_mostrar_ocultar {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .icono_mostrar_ocultar .icono {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .icono_mostrar_ocultar .ocultar {
+    display: none;
+  }
+  
+  .input_container.mostrar .mostrar {
+    display: none;
+  }
+  
+  .input_container.mostrar .ocultar {
+    display: block;
+  }
+  

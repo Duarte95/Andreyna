@@ -1,5 +1,9 @@
+.finalizado-center {
+  display: grid;
+  place-content: center;
+}
+
 .contenedor_like {
-  
   height: 180px;
   width: 180px;
   background-color: limegreen;
@@ -8,11 +12,9 @@
   border: 7px solid white;
   position: relative;
   margin-bottom: 20px;
-  
 }
 
 .like {
-  
   width: 45px;
   height: 90px;
   border: 2px 3px white;
@@ -22,14 +24,11 @@
   position: absolute;
   left: 67px;
   top: 23px;
-  
 }
 
 .texto {
-  
   color: white;
   font-weight: bold;
   font-size: 30px;
   text-align: center;
-  
 }

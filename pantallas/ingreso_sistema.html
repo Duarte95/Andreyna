@@ -13,9 +13,11 @@
   <link rel="stylesheet" href="../css/base/cabecera.css">
   <link rel="stylesheet" href="../css/base/inputs-boton.css">
   <!-- Custom Styles -->
-  <link rel="stylesheet" href="../css/components/boton-ingresar.css">
+  <link rel="stylesheet" href="../css/components/botones.css">
   <link rel="stylesheet" href="../css/components/departamentos.css">
   <link rel="stylesheet" href="../css/base/formulario.css">
+  <link rel="stylesheet" href="../css/components/mostrar-ocultar.css">
+  <link rel="stylesheet" href="../css/components/icono.css">
   
 </head>
 
@@ -76,7 +78,12 @@
         </div>
         <div class="input_wrapper">
           <label class="label pass" for="Clave">Clave</label>
-          <input class="input clave" type="password" required data-clave>
+          <div class="input_container">
+            <input class="input clave" type="password" required data-clave>
+            <div class="icono_mostrar_ocultar" onclick="togglePasswordVisibility()">
+              <img src="../img/mostrar.svg" alt="mostrar" class="icono mostrar">
+              <img src="../img/ocultar.svg" alt="mostrar" class="icono ocultar">
+          </div>
         </div>
         <button class="boton ingreso" type="submit" data-entrar>INGRESAR</button>
       </form>
@@ -89,7 +96,7 @@
     <p>Derechos reservados - &copy Copy Right 2023 - Antony Duarte </p>
   </footer>
   
-  <script src="../js/autenticacion.js" type="module"></script>
+  <script src="../js/iniciarSesion.js"></script>
   <script src="../js/seleccion.js"></script>
   
 </body>
