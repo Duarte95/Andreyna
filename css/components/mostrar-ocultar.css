@@ -6,9 +6,25 @@
     cursor: pointer;
   }
   
-  .icono_mostrar_ocultar .icono {
-    width: 24px;
-    height: 24px;
+  .icono_mostrar_ocultar .icono{
+    width: auto;
+  }
+  
+  .icono {
+    width: 60px;
+    height: 30px;
+  }
+  
+/*  .ocultar {
+    position: absolute;
+    top: 12px;
+    right: 0;
+  }*/
+  
+  .mostrar{
+    position: absolute;
+    top: 0px;
+    right: 0;
   }
   
   .icono_mostrar_ocultar .ocultar {

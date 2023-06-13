@@ -1,21 +1,28 @@
 .formulario {
   margin: 20px auto;
-  width: 80%;
-  max-width: 420px; /*mientras ajusto directamente los inputs*/
+  width: 100%;
+  /*mientras ajusto directamente los inputs*/
 }
 
 .formulario_contenedor {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%
 }
 
 .input_wrapper {
   display: flex;
   align-items: center;
-  justify-content: right;
+  justify-content: center;
   margin-bottom: 10px;
-  width: 400px;
+  width: 90%;
+}
+
+.input_container {
+  /*width: 220px;*/
+  /*justify-self: center;*/
+  position: relative;
 }
 
 .label {
@@ -24,5 +31,6 @@
   font-weight: bold;
   font-size: 18px;
   text-align: right;
+  width: 30%;
 }
  

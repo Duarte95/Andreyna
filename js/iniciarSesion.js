@@ -24,15 +24,21 @@ const usuarios = [
     const usuarioEncontrado = usuarios.find(
       usuario => usuario.usuario === usuarioIngresado && usuario.clave === claveIngresada
     );
+    
+    const spanError = document.querySelector('[data-error]');
   
     if (usuarioEncontrado) {
       // Inicio de sesión exitoso
       console.log('Inicio de sesión exitoso');
       // Aquí puedes redirigir a la página correspondiente
       window.location.href = '../pantallas/seccion_metas.html';
+    } else if (usuarioIngresado.value && claveIngresada.value == '') {
+      spanError.style.display = 'block';
+      spanError.innerHTML = 'Estos campos no pueden estar vacios';
     } else {
       // Inicio de sesión fallido
-      console.log('Inicio de sesión fallido');
+      spanError.style.display = 'block';
+      spanError.innerHTML = 'Clave o Usuario errado, por favor intente nuevamente';
     }
   }
   

@@ -8,6 +8,6 @@
   outline-style: none;
   min-width: 120px;
   box-sizing: border-box;
-  width: 330px;
-  
+  /*width: 330px; originalmemte*/
+  width: 180px;
 }
