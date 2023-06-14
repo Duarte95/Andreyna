@@ -1,7 +1,10 @@
 .mensaje_error{
   display: none;
   color: red;
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: bols;
   text-align: center;
 }

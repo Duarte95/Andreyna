@@ -11,14 +11,6 @@
   width: 100%
 }
 
-.input_wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 10px;
-  width: 90%;
-}
-
 .input_container {
   /*width: 220px;*/
   /*justify-self: center;*/
@@ -26,11 +18,10 @@
 }
 
 .label {
-  margin-right: 15px;
+  margin-bottom: 5px;
   color: white;
   font-weight: bold;
   font-size: 18px;
-  text-align: right;
-  width: 30%;
+  text-align: center;
 }
  

@@ -32,7 +32,7 @@ const usuarios = [
       console.log('Inicio de sesión exitoso');
       // Aquí puedes redirigir a la página correspondiente
       window.location.href = '../pantallas/seccion_metas.html';
-    } else if (usuarioIngresado.value && claveIngresada.value == '') {
+    } else if ((usuarioIngresado && claveIngresada) === '') {
       spanError.style.display = 'block';
       spanError.innerHTML = 'Estos campos no pueden estar vacios';
     } else {

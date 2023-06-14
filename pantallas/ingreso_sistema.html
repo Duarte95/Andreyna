@@ -73,24 +73,20 @@
     <section class="formulario">
       <form action="./seccion_metas.html" class="formulario_contenedor">
         
-        <div class="input_wrapper">
           <label class="label user" for="Usuario">Usuario</label>
-          <input class="input usuario" type="text" required data-usuario>
-        </div>
+          <input class="input usuario" type="text" data-usuario>
         
-        <div class="input_wrapper">
           <label class="label pass" for="Clave">Clave</label>
           <div class="input_container">
-            <input class="input clave" type="password" required data-clave>
+            <input class="input clave" type="password" data-clave>
             <div class="icono_mostrar_ocultar" onclick="togglePasswordVisibility()">
               
-              <img src="../img/mostrar.svg" alt="mostrar" class="icono mostrar">
+              <img src="" alt="M" class="icono mostrar">
               
-              <img src="../img/ocultar.svg" alt="ocultar" class="icono ocultar">
+              <img src="" alt="O" class="icono ocultar">
               
             </div>
           </div>
-        </div>
         <span class="mensaje_error" data-error></span>
         <button class="boton ingreso" type="submit" data-entrar>INGRESAR</button>
       </form>

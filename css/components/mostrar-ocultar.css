@@ -1,30 +1,14 @@
 .icono_mostrar_ocultar {
     position: absolute;
     right: 10px;
-    top: 50%;
+    top: 40%;/*50%*/
     transform: translateY(-50%);
     cursor: pointer;
   }
   
   .icono_mostrar_ocultar .icono{
-    width: auto;
-  }
-  
-  .icono {
-    width: 60px;
-    height: 30px;
-  }
-  
-/*  .ocultar {
-    position: absolute;
-    top: 12px;
-    right: 0;
-  }*/
-  
-  .mostrar{
-    position: absolute;
-    top: 0px;
-    right: 0;
+    width: 30px;;
+    height: auto;
   }
   
   .icono_mostrar_ocultar .ocultar {

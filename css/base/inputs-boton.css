@@ -1,6 +1,6 @@
 
 .input, .boton {
-  
+  text-align: center;
   padding: 10px;
   margin: 5px 0px 15px 0px;
   border-radius: 10px;
@@ -9,5 +9,5 @@
   min-width: 120px;
   box-sizing: border-box;
   /*width: 330px; originalmemte*/
-  width: 180px;
+  width: 250px;
 }
