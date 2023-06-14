@@ -5,7 +5,7 @@
 
 .ingreso {
   color: black;
-  width: 40%;
+  /*width: 40%;*/
   margin: 20px 30% 0px 30%;
 }
 
@@ -16,8 +16,8 @@
   color: white;
   border: 2px solid white;
   background: red;
-  min-width: 120px;
-  max-width: 150px;
+  /* min-width: 120px;
+  max-width: 150px; */
 }
 
 .ingreso:hover, .salir:hover{
