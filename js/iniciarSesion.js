@@ -1,10 +1,10 @@
 // Objeto que almacenará los usuarios
 const usuarios = [
-    { usuario: 'andreyna', clave: 'Parraga12', },
-    { usuario: 'usuario2', clave: 'Clave2', },
-    { usuario: 'usuario3', clave: 'Clave3', },
-    { usuario: 'usuario4', clave: 'Clave2', },
-    { usuario: 'usuario5', clave: 'Clave3', }
+    { usuario: 'andreyna', clave: 'Parraga12', departamento: 'Oficina de Planeacion y Presupuesto'},
+    { usuario: 'usuario2', clave: 'Clave2', departamento: 'Direccion de Estimulo Creativo'},
+    { usuario: 'usuario3', clave: 'Clave3', departamento: 'Oficina de Gestion'},
+    { usuario: 'usuario4', clave: 'Clave2', departamento: 'Direccion de Investigacion'},
+    { usuario: 'usuario5', clave: 'Clave3', departamento: 'Direccion de Apoyo'}
   ];
   
   // Función para validar la contraseña usando una expresión regular
@@ -15,32 +15,50 @@ const usuarios = [
     return regexContrasena.test(contrasena);
   }
   
-  // Función para verificar el inicio de sesión
-  function iniciarSesion() {
-    const usuarioIngresado = document.querySelector('[data-usuario]').value;
-    const claveIngresada = document.querySelector('[data-clave]').value;
-  
+// Función para verificar el inicio de sesión
+function iniciarSesion() {
+  const usuarioIngresado = document.querySelector('[data-usuario]').value;
+  const claveIngresada = document.querySelector('[data-clave]').value;
+  const seleccionElement = document.querySelector('.selected');
+  const seleccionIngresada = seleccionElement ? seleccionElement.textContent.trim() : '';
+
+  const spanError = document.querySelector('[data-error]');
+
+  if (usuarioIngresado === '' || claveIngresada === '') {
+    spanError.style.display = 'block';
+    spanError.innerHTML = 'Los campos "Usuario" y "Clave" no pueden estar vacios';
+    console.log('Estos campos no pueden estar vacios. Debe elegir un departamento.');
+  } else if (seleccionIngresada === '') {
+    spanError.style.display = 'block';
+    spanError.innerHTML = 'Debe seleccionar un departamento';
+    console.log('Debe seleccionar un departamento');
+  } else {
     // Verificar si el usuario y la contraseña coinciden
     const usuarioEncontrado = usuarios.find(
       usuario => usuario.usuario === usuarioIngresado && usuario.clave === claveIngresada
     );
-    
-    const spanError = document.querySelector('[data-error]');
-  
+
     if (usuarioEncontrado) {
-      // Inicio de sesión exitoso
-      console.log('Inicio de sesión exitoso');
-      // Aquí puedes redirigir a la página correspondiente
-      window.location.href = '../pantallas/seccion_metas.html';
-    } else if ((usuarioIngresado && claveIngresada) === '') {
-      spanError.style.display = 'block';
-      spanError.innerHTML = 'Estos campos no pueden estar vacios';
+      // Verificar si el usuario pertenece al departamento ingresado
+      if (usuarioEncontrado.departamento !== seleccionIngresada) {
+        // El usuario no pertenece a ese departamento
+        spanError.style.display = 'block';
+        spanError.innerHTML = 'El usuario no pertenece a ese departamento';
+        console.log('El usuario no pertenece a ese departamento');
+      } else {
+        // Inicio de sesión exitoso
+        console.log('Inicio de sesión exitoso');
+        // Aquí puedes redirigir a la página correspondiente
+        window.location.href = '../pantallas/seccion_metas.html';
+      }
     } else {
       // Inicio de sesión fallido
       spanError.style.display = 'block';
       spanError.innerHTML = 'Clave o Usuario errado, por favor intente nuevamente';
+      console.log('Clave o Usuario errado');
     }
   }
+}
   
   // Evento para el botón de ingreso
   document.querySelector('[data-entrar]').addEventListener('click', function(event) {

@@ -12,4 +12,3 @@ options.forEach(option => {
     }
   });
 });
-
