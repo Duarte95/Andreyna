@@ -69,10 +69,10 @@ const usuarios = [
   
     if (departamento === 'Oficina de Planeacion y Presupuesto') {
       // Redirigir a la página correspondiente para el departamento 'Oficina de Planeacion y Presupuesto'
-      window.location.href = '../pantallas/seccion_metas.html';
+      window.location.href = '../pantallas/seccion_procesos.html';
     } else {
       // Redirigir a la página correspondiente para los otros departamentos
-      window.location.href = '../pantallas/seccion_procesos.html';
+      window.location.href = '../pantallas/seccion_metas.html';
     }
   }  
   
