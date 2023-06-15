@@ -6,7 +6,7 @@ const usuarios = [
     { usuario: 'usuario4', clave: 'Clave4', departamento: 'Direccion de Investigacion'},
     { usuario: 'usuario5', clave: 'Clave5', departamento: 'Direccion de Apoyo'}
   ];
-  
+
   // Función para validar la contraseña usando una expresión regular
   function validarContrasena(contrasena) {
     // Regex para validar la contraseña
@@ -14,7 +14,7 @@ const usuarios = [
   
     return regexContrasena.test(contrasena);
   }
-  
+
   function iniciarSesion() {
     // Verificar si el usuario ya ha iniciado sesión anteriormente
     if (sessionStorage.getItem('sesionIniciada') === 'true') {
@@ -22,7 +22,7 @@ const usuarios = [
       redirigirSegunDepartamento();
       return; // Salir de la función para evitar ejecutar el resto del código de inicio de sesión
     }
-  
+
     const usuarioIngresado = document.querySelector('[data-usuario]').value;
     const claveIngresada = document.querySelector('[data-clave]').value;
     const seleccionElement = document.querySelector('.selected');
@@ -64,7 +64,7 @@ const usuarios = [
       }
     }
   }
-  
+
   function redirigirSegunDepartamento(departamento) {
   
     if (departamento === 'Oficina de Planeacion y Presupuesto') {
@@ -76,30 +76,9 @@ const usuarios = [
     }
   }  
   
+
   // Evento para el botón de ingreso
   document.querySelector('[data-entrar]').addEventListener('click', function(event) {
     event.preventDefault();
     iniciarSesion();
   });
-
-  // Función para mostrar u ocultar la contraseña
-  function togglePasswordVisibility() {
-    const input = document.querySelector('.input.clave');
-    const inputContainer = document.querySelector('.input_container');
-    const mostrarIcono = document.querySelector('.icono.mostrar');
-    const ocultarIcono = document.querySelector('.icono.ocultar');
-  
-    if (input.type === 'password') {
-      input.type = 'text';
-      inputContainer.classList.add('mostrar');
-      mostrarIcono.style.display = 'none';
-      ocultarIcono.style.display = 'block';
-    } else {
-      input.type = 'password';
-      inputContainer.classList.remove('mostrar');
-      mostrarIcono.style.display = 'block';
-      ocultarIcono.style.display = 'none';
-    }
-  }
-  
-  
