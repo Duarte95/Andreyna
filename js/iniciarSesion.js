@@ -15,60 +15,66 @@ const usuarios = [
     return regexContrasena.test(contrasena);
   }
   
-// Función para verificar el inicio de sesión
-function iniciarSesion() {
-
+  function iniciarSesion() {
     // Verificar si el usuario ya ha iniciado sesión anteriormente
     if (sessionStorage.getItem('sesionIniciada') === 'true') {
       // Usuario ya ha iniciado sesión, redirigir a la página correspondiente
-      window.location.href = '../pantallas/seccion_metas.html';
+      redirigirSegunDepartamento();
       return; // Salir de la función para evitar ejecutar el resto del código de inicio de sesión
     }
-
-  const usuarioIngresado = document.querySelector('[data-usuario]').value;
-  const claveIngresada = document.querySelector('[data-clave]').value;
-  const seleccionElement = document.querySelector('.selected');
-  const seleccionIngresada = seleccionElement ? seleccionElement.textContent.trim() : '';
-
-  const spanError = document.querySelector('[data-error]');
-
-  if (usuarioIngresado === '' || claveIngresada === '') {
-    spanError.style.display = 'block';
-    spanError.innerHTML = 'Los campos "Usuario" y "Clave" no pueden estar vacios';
-    console.log('Estos campos no pueden estar vacios. Debe elegir un departamento.');
-  } else if (seleccionIngresada === '') {
-    spanError.style.display = 'block';
-    spanError.innerHTML = 'Debe seleccionar un departamento';
-    console.log('Debe seleccionar un departamento');
-  } else {
-    // Verificar si el usuario y la contraseña coinciden
-    const usuarioEncontrado = usuarios.find(
-      usuario => usuario.usuario === usuarioIngresado && usuario.clave === claveIngresada
-    );
-
-    if (usuarioEncontrado) {
-      // Verificar si el usuario pertenece al departamento ingresado
-      if (usuarioEncontrado.departamento !== seleccionIngresada) {
-        // El usuario no pertenece a ese departamento
-        spanError.style.display = 'block';
-        spanError.innerHTML = 'El usuario no pertenece a ese departamento';
-        console.log('El usuario no pertenece a ese departamento');
-      } else {
-        // Inicio de sesión exitoso
-        console.log('Inicio de sesión exitoso');
-        // Guardar indicador de inicio de sesión en sessionStorage
-        sessionStorage.setItem('sesionIniciada', 'true');
-        // Aquí puedes redirigir a la página correspondiente
-        window.location.href = '../pantallas/seccion_metas.html';
-      }
-    } else {
-      // Inicio de sesión fallido
+  
+    const usuarioIngresado = document.querySelector('[data-usuario]').value;
+    const claveIngresada = document.querySelector('[data-clave]').value;
+    const seleccionElement = document.querySelector('.selected');
+    const seleccionIngresada = seleccionElement ? seleccionElement.textContent.trim() : '';
+  
+    const spanError = document.querySelector('[data-error]');
+  
+    if (usuarioIngresado === '' || claveIngresada === '') {
+      // Verificar si los inputs Usuario y Clave estan vacios
       spanError.style.display = 'block';
-      spanError.innerHTML = 'Clave o Usuario errado, por favor intente nuevamente';
-      console.log('Clave o Usuario errado');
+      spanError.innerHTML = 'Los campos "Usuario" y "Clave" no pueden estar vacios';
+    } else if (seleccionIngresada === '') {
+      // Verificar si departamento ha sido seleccionado luego de haber verificado que usuario y clave tengan contenido
+      spanError.style.display = 'block';
+      spanError.innerHTML = 'Debe seleccionar un departamento';
+    } else {
+      // Verificar si el usuario y la contraseña coinciden
+      const usuarioEncontrado = usuarios.find(
+        usuario => usuario.usuario === usuarioIngresado && usuario.clave === claveIngresada
+      );
+  
+      if (usuarioEncontrado) {
+        // Verificar si el usuario pertenece al departamento ingresado
+        if (usuarioEncontrado.departamento !== seleccionIngresada) {
+          // El usuario no pertenece a ese departamento
+          spanError.style.display = 'block';
+          spanError.innerHTML = 'El usuario no pertenece a este departamento';
+        } else {
+          // Inicio de sesión exitoso
+          // Guardar indicador de inicio de sesión en sessionStorage
+          sessionStorage.setItem('sesionIniciada', 'true');
+          // Redirigir según el departamento
+          redirigirSegunDepartamento(seleccionIngresada);
+        }
+      } else {
+        // Inicio de sesión fallido
+        spanError.style.display = 'block';
+        spanError.innerHTML = 'Clave o Usuario errado, por favor intente nuevamente';
+      }
     }
   }
-}
+  
+  function redirigirSegunDepartamento(departamento) {
+  
+    if (departamento === 'Oficina de Planeacion y Presupuesto') {
+      // Redirigir a la página correspondiente para el departamento 'Oficina de Planeacion y Presupuesto'
+      window.location.href = '../pantallas/seccion_metas.html';
+    } else {
+      // Redirigir a la página correspondiente para los otros departamentos
+      window.location.href = '../pantallas/seccion_procesos.html';
+    }
+  }  
   
   // Evento para el botón de ingreso
   document.querySelector('[data-entrar]').addEventListener('click', function(event) {
