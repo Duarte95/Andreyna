@@ -17,6 +17,14 @@ const usuarios = [
   
 // Función para verificar el inicio de sesión
 function iniciarSesion() {
+
+    // Verificar si el usuario ya ha iniciado sesión anteriormente
+    if (sessionStorage.getItem('sesionIniciada') === 'true') {
+      // Usuario ya ha iniciado sesión, redirigir a la página correspondiente
+      window.location.href = '../pantallas/seccion_metas.html';
+      return; // Salir de la función para evitar ejecutar el resto del código de inicio de sesión
+    }
+
   const usuarioIngresado = document.querySelector('[data-usuario]').value;
   const claveIngresada = document.querySelector('[data-clave]').value;
   const seleccionElement = document.querySelector('.selected');
@@ -48,6 +56,8 @@ function iniciarSesion() {
       } else {
         // Inicio de sesión exitoso
         console.log('Inicio de sesión exitoso');
+        // Guardar indicador de inicio de sesión en sessionStorage
+        sessionStorage.setItem('sesionIniciada', 'true');
         // Aquí puedes redirigir a la página correspondiente
         window.location.href = '../pantallas/seccion_metas.html';
       }
