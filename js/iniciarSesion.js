@@ -3,8 +3,8 @@ const usuarios = [
     { usuario: 'andreyna', clave: 'Parraga12', departamento: 'Oficina de Planeacion y Presupuesto'},
     { usuario: 'usuario2', clave: 'Clave2', departamento: 'Direccion de Estimulo Creativo'},
     { usuario: 'usuario3', clave: 'Clave3', departamento: 'Oficina de Gestion'},
-    { usuario: 'usuario4', clave: 'Clave2', departamento: 'Direccion de Investigacion'},
-    { usuario: 'usuario5', clave: 'Clave3', departamento: 'Direccion de Apoyo'}
+    { usuario: 'usuario4', clave: 'Clave4', departamento: 'Direccion de Investigacion'},
+    { usuario: 'usuario5', clave: 'Clave5', departamento: 'Direccion de Apoyo'}
   ];
   
   // Función para validar la contraseña usando una expresión regular
