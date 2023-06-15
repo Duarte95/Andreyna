@@ -8,5 +8,16 @@
   outline-style: none;
   min-width: 120px;
   box-sizing: border-box;
-  max-width: 250px;
+}
+
+@media screen and (min-width: 420px) {
+  .input {
+    width: 220px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .input {
+   width: 300px;
+  }
 }

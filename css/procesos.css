@@ -3,17 +3,41 @@
   display: flex;
   flex-flow: column;
   justify-content: center;
+  align-items: center;
   
 }
 
 .procesos {
   
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   width: 100px;
   height: 40px;
   background-color: white;
+  color: white;
   font-weight: bold;
-  border: 2px solid black;
-  text-align: center;
+  border: 2px solid white;
   margin-bottom: 30px;
+  margin: 10px 10px;
+  border-radius: 10px;
+  padding: 5px;
+  background: linear-gradient(135deg, rgb(181, 120, 255), rgb(150, 77, 240));
+  cursor: pointer;
   
+}
+
+@media screen and (min-width: 990px){
+  .container_procesos {
+    flex-flow: row;
+    justify-content: space-between;
+  }
+
+  .procesos{
+    width: 200px;
+    font-size: 18px;
+    border: 3px solid white;
+  }
+
 }
