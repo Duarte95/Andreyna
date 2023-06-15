@@ -1,4 +1,4 @@
-.container_procesos {
+.seccion_procesos {
   
   display: flex;
   flex-flow: column;
@@ -28,8 +28,13 @@
   
 }
 
+.sub {
+  color: black;
+  background: linear-gradient(135deg, rgb(196, 147, 255), rgb(219, 189, 255));
+}
+
 @media screen and (min-width: 990px){
-  .container_procesos {
+  .seccion_procesos {
     flex-flow: row;
     justify-content: space-between;
   }
