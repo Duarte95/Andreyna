@@ -1,10 +1,17 @@
-.mensaje_error{
+.mensaje_error, .mensaje_exito{
   display: none;
   color: white;
-  background-color: red;
   border-radius: 5px;
   padding: 5px;
   font-size: 14px;
   font-weight: bold;
   text-align: center;
+}
+
+.mensaje_error{
+  background-color: red;
+}
+
+.mensaje_exito{
+  background-color: limegreen;
 }
