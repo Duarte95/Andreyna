@@ -26,22 +26,3 @@
   left: 67px;
   top: 23px;
 }
-
-.texto {
-  color: white;
-  font-weight: bold;
-  font-size: 30px;
-  text-align: center;
-}
-
-.boton_home {
-  width: 50px;
-  height: auto;
-  margin: 50px 0 10px 0;
-  cursor: pointer;
-  
-}
-
-.size-little{
-  font-size: 16px;
-}

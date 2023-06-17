@@ -26,7 +26,7 @@
   
   <header class="cabecera">
 
-    <img class="logo1" src="../img/logo1.png" alt="logo_IAEM">
+    <img class="logo1" src="../img/logo1.svg" alt="logo_IAEM">
 
     <div class="contenedor_titulos">
 
@@ -44,12 +44,12 @@
   
   <main class="cuerpo">
     <section class="formulario">
-      <form class="formulario_contenedor" action="./seccion_procesos.html">
+      <form class="formulario_contenedor">
         <label class="label" for="metas_actuales">Metas Estipuladas</label>
         <input class="input metas_actuales" type="number" required data-alcanzadas>
         <label class="label" for="metas_propuestas">Metas Alcanzadas</label>
         <input class="input metas_propuestas" type="number" required data-propuestas>
-        <span class="mensaje_exito" data-error></span>
+        <span class="mensaje_exito" data-exito></span>
         <button class="boton ingreso" type="submit" data-insertar>INSERTAR</button>
       </form>
 
@@ -63,6 +63,7 @@
   
   <script src="../js/metas.js"></script>
   <script src="../js/cerrarSesion.js"></script>
+  <script src="../js/registroMetas.js"></script>
   
 </body>
 
