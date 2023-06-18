@@ -1,3 +1,4 @@
+//import { ocultarElemento } from './ocultarSpan.js'
 // Objeto que almacenará los usuarios
 const usuarios = [
     { usuario: 'andreyna', clave: 'Parraga12', departamento: 'Oficina de Planeacion y Presupuesto'},
@@ -28,16 +29,24 @@ const usuarios = [
     const seleccionElement = document.querySelector('.selected');
     const seleccionIngresada = seleccionElement ? seleccionElement.textContent.trim() : '';
   
-    const spanError = document.querySelector('[data-error]');
+    const spanError = document.querySelector('[data-mensaje]');
   
     if (usuarioIngresado === '' || claveIngresada === '') {
       // Verificar si los inputs Usuario y Clave estan vacios
       spanError.style.display = 'block';
+      spanError.classList.add('error');
       spanError.innerHTML = 'Los campos "Usuario" y "Clave" no pueden estar vacios';
+      setTimeout(function() {
+        spanError.style.display = 'none';
+      }, 2000); // Ocultar después de 3 segundos (3000 milisegundos)
     } else if (seleccionIngresada === '') {
       // Verificar si departamento ha sido seleccionado luego de haber verificado que usuario y clave tengan contenido
       spanError.style.display = 'block';
+      spanError.classList.add('error');
       spanError.innerHTML = 'Debe seleccionar un departamento';
+      setTimeout(function() {
+        spanError.style.display = 'none';
+      }, 2000); // Ocultar después de 3 segundos (3000 milisegundos)
     } else {
       // Verificar si el usuario y la contraseña coinciden
       const usuarioEncontrado = usuarios.find(
@@ -49,7 +58,11 @@ const usuarios = [
         if (usuarioEncontrado.departamento !== seleccionIngresada) {
           // El usuario no pertenece a ese departamento
           spanError.style.display = 'block';
+          spanError.classList.add('error');
           spanError.innerHTML = 'El usuario no pertenece a este departamento';
+          setTimeout(function() {
+            spanError.style.display = 'none';
+          }, 2000); // Ocultar después de 3 segundos (3000 milisegundos)
         } else {
           // Inicio de sesión exitoso
           // Guardar indicador de inicio de sesión en sessionStorage
@@ -60,6 +73,7 @@ const usuarios = [
       } else {
         // Inicio de sesión fallido
         spanError.style.display = 'block';
+        spanError.classList.add('error');
         spanError.innerHTML = 'Clave o Usuario errado, por favor intente nuevamente';
       }
     }
@@ -69,10 +83,10 @@ const usuarios = [
   
     if (departamento === 'Oficina de Planeacion y Presupuesto') {
       // Redirigir a la página correspondiente para el departamento 'Oficina de Planeacion y Presupuesto'
-      window.location.href = '../pantallas/seccion_metas.html';
+      window.location.href = '../pantallas/seccion_procesos.html';
     } else {
       // Redirigir a la página correspondiente para los otros departamentos
-      window.location.href = '../pantallas/seccion_procesos.html';
+      window.location.href = '../pantallas/seccion_metas.html';
     }
   }  
   

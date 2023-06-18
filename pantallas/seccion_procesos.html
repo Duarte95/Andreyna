@@ -20,7 +20,7 @@
   
 </head>
 
-<script src="../js/nocopy.js"></script>
+<script src="../js/utilidades/nocopy.js"></script>
 
 <body>
   
@@ -47,26 +47,26 @@
     <section class="seccion_procesos">
       <div class="container_areas">
         <div class="procesos categoria">AREAS</div>
-        <div class="sub procesos">Producción</div>
-        <div class="sub procesos">Formación e Investigación</div>
-        <div class="sub procesos">Estimulo Creativo</div>
-        <div class="sub procesos">Comunicación</div>
+        <div class="sub procesos" onclick="produccion()">Producción</div>
+        <div class="sub procesos" onclick="formacion()">Formación e Investigación</div>
+        <div class="sub procesos" onclick="estimulo()">Estimulo Creativo</div>
+        <div class="sub procesos" onclick="comunicacion()">Comunicación</div>
       </div>
       <div class="container_acciones">
         <div class="procesos categoria">ACCIONES</div>
-        <div class="sub procesos">Crecimiento</div>
-        <div class="sub procesos">Creación</div>
+        <div class="sub procesos" onclick="crecimiento()">Crecimiento</div>
+        <div class="sub procesos" onclick="creacion()">Creación</div>
         <div class="sub procesos" onclick="apoyo()">Garantizar Apoyo</div>
-        <div class="sub procesos">Desarrollo de Estrategias</div>
+        <div class="sub procesos" onclick="desarrollo()">Desarrollo de Estrategias</div>
       </div>
       <div class="container_anuales">
         <div class="procesos categoria">METAS ANUALES</div>
       </div>
       <div class="container_reportes">
         <div class="procesos categoria">REPORTES</div>
-        <div class="sub procesos">Objetivos Alcanzado</div>
-        <div class="sub procesos">Reportes Actuales</div>
-        <div class="sub procesos">Reportes</div>
+        <div class="sub procesos" onclick="">Objetivos Alcanzado</div>
+        <div class="sub procesos" onclick="">Reportes Actuales</div>
+        <div class="sub procesos" onclick="">Reportes</div>
       </div>
     </section>
     
@@ -80,6 +80,7 @@
 
   <script src="../js/cerrarSesion.js"></script>
   <script src="../js/procesos.js"></script>
+  <script src="../js/utilidades/desplegarLista.js"></script>
   
 </body>
 

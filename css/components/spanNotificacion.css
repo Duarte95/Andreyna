@@ -1,6 +1,5 @@
-.mensaje_error, .mensaje_exito{
+.error, .exito{
   display: none;
-  color: white;
   border-radius: 5px;
   padding: 5px;
   font-size: 14px;
@@ -8,10 +7,12 @@
   text-align: center;
 }
 
-.mensaje_error{
+.error{
   background-color: red;
+  color: white;
 }
 
-.mensaje_exito{
+.exito{
   background-color: limegreen;
+  color: black;
 }

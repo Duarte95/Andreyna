@@ -11,11 +11,13 @@
       <link rel="stylesheet" href="../../css/base/base.css">
       <link rel="stylesheet" href="../../css/base/cabecera.css">
       <link rel="stylesheet" href="../../css/base/inputs-boton.css">
+      <link rel="stylesheet" href="../../css/components/botonesRedondos.css">
       <!-- Custom Styles -->
       <link rel="stylesheet" href="../../css/base/tituloBlanco.css">
+      <link rel="stylesheet" href="../../css/components/botones.css">
 </head>
 
-<script src="../js/nocopy.js"></script>
+<script src="../js/utilidades/nocopy.js"></script>
 
 <body>
   <header class="cabecera">
@@ -36,8 +38,27 @@
   <hr>
   <hr>
   <main class="cuerpo">
-    <h1 class="titulo-blanco">COMUNICACIÓN</h1>
+    <section class="definiciones">
+      <h1 class="titulo-blanco">COMUNICACIÓN</h1>
+      <div class="cuadro-texto">
+        <p class="texto">
+        
+        </p>
+      </div>
+    </section>
+    <div class="container-redondo" onclick="goBack()">
+      <img src="../../img/GoBack.svg" alt="atras" class="goBack">
+    </div>
+    <p class="texto size-little">ATRAS</p>
+    <button class="boton salir" data-salir>CERRAR SESION</button>
   </main>
+
+  <footer class="creditos">
+    <p>Derechos reservados - &copy Copy Right 2023 - Antony Duarte </p>
+  </footer>>
+
+  <script src="../../js/botonBack.js"></script>
+  <script src="../../js/cerrarSesion.js"></script>
 </body>
 
 </html>

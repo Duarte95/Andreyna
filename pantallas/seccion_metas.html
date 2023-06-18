@@ -16,11 +16,12 @@
   <link rel="stylesheet" href="../css/base/formulario.css">
   <link rel="stylesheet" href="../css/components/botones.css">
   <link rel="stylesheet" href="../css/components/spanNotificacion.css">
+  <link rel="stylesheet" href="../css/components/metas.css">
 
  
 </head>
 
-<script src="../js/nocopy.js"></script>
+<script src="../js/utilidades/nocopy.js"></script>
 
 <body>
   
@@ -44,14 +45,14 @@
   
   <main class="cuerpo">
     <section class="formulario">
-      <form class="formulario_contenedor">
+      <div class="formulario_contenedor">
         <label class="label" for="metas_actuales">Metas Estipuladas</label>
-        <input class="input metas_actuales" type="number" required data-alcanzadas>
+        <input class="input metas_actuales" type="number" data-alcanzadas>
         <label class="label" for="metas_propuestas">Metas Alcanzadas</label>
-        <input class="input metas_propuestas" type="number" required data-propuestas>
-        <span class="mensaje_exito" data-exito></span>
+        <input class="input metas_propuestas" type="number" data-propuestas>
+        <span class="mensaje" data-mensaje></span>
         <button class="boton ingreso" type="submit" data-insertar>INSERTAR</button>
-      </form>
+      </div>
 
       <button class="boton salir" data-salir>CERRAR SESION</button>
     </section>
@@ -61,7 +62,6 @@
     <p>Derechos reservados - &copy Copy Right 2023 - Antony Duarte </p>
   </footer>
   
-  <script src="../js/metas.js"></script>
   <script src="../js/cerrarSesion.js"></script>
   <script src="../js/registroMetas.js"></script>
   
