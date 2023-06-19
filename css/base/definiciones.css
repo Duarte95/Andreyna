@@ -30,11 +30,11 @@
   margin-top: 20px;
 }
 
-/* .sub-parrafo {
-
-} */
+.sub-parrafo {
+  margin-bottom: 10px;
+} 
 
 .vineta {
   text-align: justify;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
