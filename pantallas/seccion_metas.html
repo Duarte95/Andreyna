@@ -1,70 +1,75 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Metas</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Metas</title>
-  
-  <!-- HTML -->
-  <link rel="icon" href="../img/favico.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="../css/base/reset.css">
-  <link rel="stylesheet" href="../css/base/base.css">
-  <link rel="stylesheet" href="../css/base/cabecera.css">
-  <link rel="stylesheet" href="../css/base/inputs-boton.css">
-  <!-- Custom Styles -->
-  <link rel="stylesheet" href="../css/base/formulario.css">
-  <link rel="stylesheet" href="../css/components/botones.css">
-  <link rel="stylesheet" href="../css/components/spanNotificacion.css">
-  <link rel="stylesheet" href="../css/components/metas.css">
+    <!-- HTML -->
+    <link rel="icon" href="../img/favico.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../css/base/reset.css" />
+    <link rel="stylesheet" href="../css/base/base.css" />
+    <link rel="stylesheet" href="../css/base/cabecera.css" />
+    <link rel="stylesheet" href="../css/base/inputs-boton.css" />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="../css/base/formulario.css" />
+    <link rel="stylesheet" href="../css/components/botones.css" />
+    <link rel="stylesheet" href="../css/components/spanNotificacion.css" />
+    <link rel="stylesheet" href="../css/components/metas.css" />
+  </head>
 
- 
-</head>
+  <script src="../js/utilidades/nocopy.js"></script>
 
-<script src="../js/utilidades/nocopy.js"></script>
+  <body>
+    <header class="cabecera">
+      <img class="logo1" src="../img/logo1.svg" alt="logo_IAEM" />
 
-<body>
-  
-  <header class="cabecera">
-
-    <img class="logo1" src="../img/logo1.svg" alt="logo_IAEM">
-
-    <div class="contenedor_titulos">
-
-      <h1 class="titulo">SAAAO</h1>
-      <p class="subtitulo">Sistema de Automatización y Autogestión de Administración Organizacional</p>
-
-    </div>
-    
-    <img class="logo2" src="../img/logo2.svg" alt="logo_SAAAO">
-      
-  </header>
-  
-  <hr>
-  <hr>
-  
-  <main class="cuerpo">
-    <section class="formulario">
-      <div class="formulario_contenedor">
-        <label class="label" for="metas_actuales">Metas Estipuladas</label>
-        <input class="input metas_actuales" type="number" placeholder="##" data-alcanzadas>
-        <label class="label" for="metas_propuestas">Metas Alcanzadas</label>
-        <input class="input metas_propuestas" type="number" placeholder="##" data-propuestas>
-        <span class="mensaje" data-mensaje></span>
-        <button class="boton ingreso" type="submit" data-insertar>INSERTAR</button>
+      <div class="contenedor_titulos">
+        <h1 class="titulo">SAAAO</h1>
+        <p class="subtitulo">
+          Sistema de Automatización y Autogestión de Administración
+          Organizacional
+        </p>
       </div>
 
-      <button class="boton salir" data-salir>CERRAR SESION</button>
-    </section>
-  </main>
-  
-  <footer class="creditos">
-    <p>Derechos reservados - &copy Copy Right 2023 - Antony Duarte </p>
-  </footer>
-  
-  <script src="../js/cerrarSesion.js"></script>
-  <script src="../js/registroMetas.js"></script>
-  
-</body>
+      <img class="logo2" src="../img/logo2.svg" alt="logo_SAAAO" />
+    </header>
 
-</html> 
+    <hr />
+    <hr />
+
+    <main class="cuerpo">
+      <section class="formulario">
+        <div class="formulario_contenedor">
+          <label class="label" for="metas_actuales">Metas Estipuladas</label>
+          <input
+            class="input metas_actuales"
+            type="number"
+            placeholder="##"
+            data-alcanzadas
+          />
+          <label class="label" for="metas_propuestas">Metas Alcanzadas</label>
+          <input
+            class="input metas_propuestas"
+            type="number"
+            placeholder="##"
+            data-propuestas
+          />
+          <span class="mensaje" data-mensaje></span>
+          <button class="boton ingreso" type="submit" data-insertar>
+            INSERTAR
+          </button>
+        </div>
+
+        <button class="boton salir" data-salir>CERRAR SESION</button>
+      </section>
+    </main>
+
+    <footer class="creditos">
+      <p>Derechos reservados - &copy Copy Right 2023 - Antony Duarte</p>
+    </footer>
+
+    <script src="../js/cerrarSesion.js"></script>
+    <script src="../js/registroMetas.js"></script>
+  </body>
+</html>

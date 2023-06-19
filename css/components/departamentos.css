@@ -30,41 +30,30 @@
 }
 
 .option.selected {
-
   border: 3px solid rgb(150, 77, 240);
   box-shadow: 0 0 10px rgb(150, 77, 240);
   background-color: rgb(196, 147, 255);
   color: white;
 }
 
-@media screen and (min-width: 640px)  {
-  
+@media screen and (min-width: 640px) {
   .departamentos {
-    
     width: 120px;
     height: 60px;
     font-size: 16px;
     padding: 7px;
   }
-
 }
 
-@media screen and (min-width: 990px)  {
-  
+@media screen and (min-width: 990px) {
   .seccion_departamentos {
-  
     flex-direction: row;
-
   }
 
   .departamentos {
-    
     width: 100px;
     height: 50px;
     font-size: 16px;
     padding: 7px;
-
   }
-
-
 }

@@ -1,4 +1,4 @@
-function goBack(){
- window.history.back();
- //cambiar al anterior del historial
+function goBack() {
+  window.history.back();
+  //cambiar al anterior del historial
 }

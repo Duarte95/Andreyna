@@ -1,87 +1,83 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/reset.css" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../css/reset.css">
+    <title>Procesos</title>
 
-  <title>Procesos</title>
-  
     <!-- HTML -->
-    <link rel="icon" href="../img/favico.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="../css/base/reset.css">
-    <link rel="stylesheet" href="../css/base/base.css">
-    <link rel="stylesheet" href="../css/base/cabecera.css">
-    <link rel="stylesheet" href="../css/base/inputs-boton.css">
-  <!-- Custom Styles -->
-  <link rel="stylesheet" href="../css/procesos.css">
-  <link rel="stylesheet" href="../css/components/botones.css">  
-  
-</head>
+    <link rel="icon" href="../img/favico.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../css/base/reset.css" />
+    <link rel="stylesheet" href="../css/base/base.css" />
+    <link rel="stylesheet" href="../css/base/cabecera.css" />
+    <link rel="stylesheet" href="../css/base/inputs-boton.css" />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="../css/procesos.css" />
+    <link rel="stylesheet" href="../css/components/botones.css" />
+  </head>
 
-<script src="../js/utilidades/nocopy.js"></script>
+  <script src="../js/utilidades/nocopy.js"></script>
 
-<body>
-  
-  <header class="cabecera">
+  <body>
+    <header class="cabecera">
+      <img class="logo1" src="../img/logo1.svg" alt="logo_IAEM" />
 
-    <img class="logo1" src="../img/logo1.svg" alt="logo_IAEM">
-
-    <div class="contenedor_titulos">
-
-      <h1 class="titulo">SAAAO</h1>
-      <p class="subtitulo">Sistema de Automatización y Autogestión de Administración Organizacional</p>
-
-    </div>
-    
-    <img class="logo2" src="../img/logo2.svg" alt="logo_SAAAO">
-      
-  </header>
-  
-  <hr>
-  <hr>
-  
-  <main class="cuerpo">
-    
-    <section class="seccion_procesos">
-      <div class="container_areas">
-        <div class="procesos categoria">AREAS</div>
-        <div class="sub procesos" onclick="produccion()">Producción</div>
-        <div class="sub procesos" onclick="formacion()">Formación e Investigación</div>
-        <div class="sub procesos" onclick="estimulo()">Estimulo Creativo</div>
-        <div class="sub procesos" onclick="comunicacion()">Comunicación</div>
+      <div class="contenedor_titulos">
+        <h1 class="titulo">SAAAO</h1>
+        <p class="subtitulo">
+          Sistema de Automatización y Autogestión de Administración
+          Organizacional
+        </p>
       </div>
-      <div class="container_acciones">
-        <div class="procesos categoria">ACCIONES</div>
-        <div class="sub procesos" onclick="crecimiento()">Crecimiento</div>
-        <div class="sub procesos" onclick="creacion()">Creación</div>
-        <div class="sub procesos" onclick="apoyo()">Garantizar Apoyo</div>
-        <div class="sub procesos" onclick="desarrollo()">Desarrollo de Estrategias</div>
-      </div>
-      <div class="container_anuales">
-        <div class="procesos categoria">METAS ANUALES</div>
-      </div>
-      <div class="container_reportes">
-        <div class="procesos categoria">REPORTES</div>
-        <div class="sub procesos" onclick="">Objetivos Alcanzado</div>
-        <div class="sub procesos" onclick="">Reportes Actuales</div>
-        <div class="sub procesos" onclick="">Reportes</div>
-      </div>
-    </section>
-    
-    <button class="boton salir" data-salir>CERRAR SESION</button>
-   
-  </main>
-  
-  <footer class="creditos">
-    <p>Derechos reservados - &copy Copy Right 2023 - Antony Duarte </p>
-  </footer>
 
-  <script src="../js/cerrarSesion.js"></script>
-  <script src="../js/procesos.js"></script>
-  <script src="../js/utilidades/desplegarLista.js"></script>
-  
-</body>
+      <img class="logo2" src="../img/logo2.svg" alt="logo_SAAAO" />
+    </header>
 
+    <hr />
+    <hr />
+
+    <main class="cuerpo">
+      <section class="seccion_procesos">
+        <div class="container_areas">
+          <div class="procesos categoria">AREAS</div>
+          <div class="sub procesos" onclick="produccion()">Producción</div>
+          <div class="sub procesos" onclick="formacion()">
+            Formación e Investigación
+          </div>
+          <div class="sub procesos" onclick="estimulo()">Estimulo Creativo</div>
+          <div class="sub procesos" onclick="comunicacion()">Comunicación</div>
+        </div>
+        <div class="container_acciones">
+          <div class="procesos categoria">ACCIONES</div>
+          <div class="sub procesos" onclick="crecimiento()">Crecimiento</div>
+          <div class="sub procesos" onclick="creacion()">Creación</div>
+          <div class="sub procesos" onclick="apoyo()">Garantizar Apoyo</div>
+          <div class="sub procesos" onclick="desarrollo()">
+            Desarrollo de Estrategias
+          </div>
+        </div>
+        <div class="container_anuales">
+          <div class="procesos categoria">METAS ANUALES</div>
+        </div>
+        <div class="container_reportes">
+          <div class="procesos categoria">REPORTES</div>
+          <div class="sub procesos" onclick="">Objetivos Alcanzado</div>
+          <div class="sub procesos" onclick="">Reportes Actuales</div>
+          <div class="sub procesos" onclick="">Reportes</div>
+        </div>
+      </section>
+
+      <button class="boton salir" data-salir>CERRAR SESION</button>
+    </main>
+
+    <footer class="creditos">
+      <p>Derechos reservados - &copy Copy Right 2023 - Antony Duarte</p>
+    </footer>
+
+    <script src="../js/cerrarSesion.js"></script>
+    <script src="../js/procesos.js"></script>
+    <script src="../js/utilidades/desplegarLista.js"></script>
+  </body>
 </html>

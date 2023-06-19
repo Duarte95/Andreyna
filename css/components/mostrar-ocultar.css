@@ -1,31 +1,31 @@
 .icono_mostrar_ocultar {
-    position: absolute;
-    right: 10px;
-    top: 40%;/*50%*/
-    transform: translateY(-50%);
-    cursor: pointer;
-    background-color: white;
-  }
-  
-  .icono_mostrar_ocultar .icono{
-    width: 20px;
-    height: auto;
-  }
-  
-  .icono_mostrar_ocultar .ocultar {
-    display: none;
-  }
-  
-  .input_container.mostrar .mostrar {
-    display: none;
-  }
-  
-  .input_container.mostrar .ocultar {
-    display: block;
-  }
-  
+  position: absolute;
+  right: 10px;
+  top: 40%; /*50%*/
+  transform: translateY(-50%);
+  cursor: pointer;
+  background-color: white;
+}
+
+.icono_mostrar_ocultar .icono {
+  width: 20px;
+  height: auto;
+}
+
+.icono_mostrar_ocultar .ocultar {
+  display: none;
+}
+
+.input_container.mostrar .mostrar {
+  display: none;
+}
+
+.input_container.mostrar .ocultar {
+  display: block;
+}
+
 @media screen and (min-width: 640px) {
-  .icono_mostrar_ocultar .icono{
+  .icono_mostrar_ocultar .icono {
     width: 30px;
     height: auto;
   }

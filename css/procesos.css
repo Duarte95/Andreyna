@@ -1,14 +1,11 @@
 .seccion_procesos {
-  
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  
 }
 
 .procesos {
-  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,7 +22,6 @@
   padding: 5px;
   background: linear-gradient(135deg, rgb(181, 120, 255), rgb(150, 77, 240));
   cursor: pointer;
-  
 }
 
 .sub {
@@ -33,18 +29,16 @@
   background: linear-gradient(135deg, rgb(196, 147, 255), rgb(219, 189, 255));
 }
 
-
-@media screen and (min-width: 990px){
+@media screen and (min-width: 990px) {
   .seccion_procesos {
     flex-flow: row;
     justify-content: space-between;
     align-items: normal;
   }
 
-  .procesos{
+  .procesos {
     width: 200px;
     font-size: 18px;
     border: 3px solid white;
   }
-
 }

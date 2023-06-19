@@ -1,25 +1,40 @@
 .definiciones {
-    width: 80%;
-    margin-right: auto;
-    margin-left: auto;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .container-botonBack {
-    display: grid;
-    place-content: center;
+  display: grid;
+  place-content: center;
 }
 
 .cuadro-texto {
-    background-color: white;
-    width: 100%;
-    height: auto;
-    border-radius: 20px;
-    padding: 15px;
-    line-height: 1.25;
+  background-color: white;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  padding: 15px;
+  line-height: 1.25;
 }
 
 .parrafo {
-    font-size: 16px;
-    font-weight: 500;
-    text-align: justify;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: justify;
+}
+
+.dot-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 20px;
+}
+
+/* .sub-parrafo {
+
+} */
+
+.vineta {
+  text-align: justify;
+  margin-bottom: 5px;
 }

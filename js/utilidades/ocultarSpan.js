@@ -1,6 +1,5 @@
-export  function ocultarElemento(elemento, tiempo) {
-    setTimeout(function() {
-      elemento.style.display = 'none';
-    }, tiempo);
-  }
-  
+export function ocultarElemento(elemento, tiempo) {
+  setTimeout(function () {
+    elemento.style.display = "none";
+  }, tiempo);
+}

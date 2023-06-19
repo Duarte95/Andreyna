@@ -1,4 +1,5 @@
-.error, .exito{
+.error,
+.exito {
   display: none;
   border-radius: 5px;
   padding: 5px;
@@ -7,12 +8,12 @@
   text-align: center;
 }
 
-.error{
+.error {
   background-color: red;
   color: white;
 }
 
-.exito{
+.exito {
   background-color: limegreen;
   color: black;
 }
