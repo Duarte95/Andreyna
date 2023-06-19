@@ -9,3 +9,5 @@ botonSalir.addEventListener('click', function() {
   // Reemplazar la URL actual en el historial del navegador
   history.replaceState(null, null, '../pantallas/ingreso_sistema.html');
 });
+
+///../seccion_finalizado.html'; agregar esto para definiciones y establecer la condicion
