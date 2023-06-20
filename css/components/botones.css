@@ -1,13 +1,19 @@
 .ingreso,
-.salir {
+.salir,
+.editar {
   font-weight: bold;
   font-size: 14px;
 }
 
-.ingreso {
+.ingreso,
+.editar {
   color: black;
   /*width: 40%;*/
   margin: 20px 30% 0px 30%;
+}
+
+.editar {
+  display: none;
 }
 
 .salir {
@@ -22,11 +28,13 @@
 }
 
 .ingreso:hover,
-.salir:hover {
+.salir:hover,
+.editar {
   cursor: pointer;
 }
 
-.ingreso:active {
+.ingreso:active,
+.editar:active {
   background-color: #505050;
   color: white;
 }

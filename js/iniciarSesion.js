@@ -92,6 +92,9 @@ function iniciarSesion() {
       spanError.classList.add("error");
       spanError.innerHTML =
         "Clave o Usuario errado, por favor intente nuevamente";
+      setTimeout(function () {
+        spanError.style.display = "none";
+      }, 2000); // Ocultar después de 3 segundos (3000 milisegundos)
     }
   }
 }

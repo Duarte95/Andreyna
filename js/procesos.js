@@ -29,3 +29,15 @@ function formacion() {
 function produccion() {
   window.location.href = "../pantallas/definiciones/produccion.html";
 }
+
+function alcanzados() {
+  window.location.href = "../pantallas/definiciones/alcanzados.html";
+}
+
+function actuales() {
+  window.location.href = "../pantallas/definiciones/actuales.html";
+}
+
+function reportes() {
+  window.location.href = "../pantallas/definiciones/reportes.html";
+}
