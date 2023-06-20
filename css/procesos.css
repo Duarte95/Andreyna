@@ -1,3 +1,18 @@
+.dropdown-content .sub-procesos {
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content .sub-procesos:hover {
+  background-color: rgb(150, 77, 240);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*/////////////////////////////////////////*/
+
 .seccion_procesos {
   display: flex;
   flex-flow: column;
@@ -5,7 +20,8 @@
   align-items: center;
 }
 
-.procesos {
+.sub-procesos,
+.categoria {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,7 +40,11 @@
   cursor: pointer;
 }
 
-.sub {
+.dropdown-content {
+  display: none;
+}
+
+.sub-procesos {
   color: black;
   background: linear-gradient(135deg, rgb(196, 147, 255), rgb(219, 189, 255));
 }
@@ -36,7 +56,8 @@
     align-items: normal;
   }
 
-  .procesos {
+  .sub-procesos,
+  .categoria {
     width: 200px;
     font-size: 18px;
     border: 3px solid white;

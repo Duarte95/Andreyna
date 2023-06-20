@@ -1,8 +1,9 @@
 function toggleSubProcesos(categoria) {
-  const subProcesos = categoria.parentNode.querySelectorAll(".sub");
+  const subProcesos = categoria.nextElementSibling;
 
-  // Alternar la clase 'show' en los subprocesos
-  subProcesos.forEach((subProceso) => {
-    subProceso.classList.toggle("show");
-  });
+  if (subProcesos.style.display === "none") {
+    subProcesos.style.display = "block";
+  } else {
+    subProcesos.style.display = "none";
+  }
 }

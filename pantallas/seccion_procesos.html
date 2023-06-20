@@ -16,6 +16,7 @@
     <!-- Custom Styles -->
     <link rel="stylesheet" href="../css/procesos.css" />
     <link rel="stylesheet" href="../css/components/botones.css" />
+    <link rel="stylesheet" href="../css/metas.css" />
   </head>
 
   <script src="../js/utilidades/nocopy.js"></script>
@@ -40,32 +41,154 @@
 
     <main class="cuerpo">
       <section class="seccion_procesos">
-        <div class="container_areas">
-          <div class="procesos categoria">AREAS</div>
-          <div class="sub procesos" onclick="produccion()">Producción</div>
-          <div class="sub procesos" onclick="formacion()">
-            Formación e Investigación
+
+        <div class="dropdown">
+          <button class="categoria">AREAS</button>
+          <div class="dropdown-content">
+            <a
+              class="sub-procesos"
+              href="../pantallas/definiciones/produccion.html"
+              >Producción</a
+            >
+            <a
+              class="sub-procesos"
+              href="../pantallas/definiciones/formacion.html"
+              >Formación e Investigación</a
+            >
+            <a
+              class="sub-procesos"
+              href="../pantallas/definiciones/estimulo.html"
+              >Estimulo Creativo</a
+            >
+            <a
+              class="sub-procesos"
+              href="../pantallas/definiciones/comunicacion.html"
+              >Comunicación</a
+            >
+            <!-- este metodo sera el que yo utilice para ir al link de informacion y crear las listas plegables que no se quiten siempre y cuando este en hover dentro de la categoria... toggleSubProcesos sera un archivo que retirare y quedara en  utilidades hasta hacer funcionar el dropDown sin usar el js, tener en cuenta que cada link de la etiqueta <a> puede ser el link directo a la pantalla/definiciones, correspondientes, sin embargo no borrare el redireccionar por funciones que se llama procesos.js que da la opcion de redireccionar los div llamados, sub-procesos-->
           </div>
-          <div class="sub procesos" onclick="estimulo()">Estimulo Creativo</div>
-          <div class="sub procesos" onclick="comunicacion()">Comunicación</div>
+
         </div>
-        <div class="container_acciones">
-          <div class="procesos categoria">ACCIONES</div>
-          <div class="sub procesos" onclick="crecimiento()">Crecimiento</div>
-          <div class="sub procesos" onclick="creacion()">Creación</div>
-          <div class="sub procesos" onclick="apoyo()">Garantizar Apoyo</div>
-          <div class="sub procesos" onclick="desarrollo()">
-            Desarrollo de Estrategias
+
+        <div class="dropdown">
+          <button class="categoria">ACCIONES</button>
+          <div class="dropdown-content">
+            <a
+              class="sub-procesos"
+              href="../pantallas/definiciones/crecimiento.html"
+              >Crecimiento</a
+            >
+            <a
+              class="sub-procesos"
+              href="../pantallas/definiciones/creacion.html"
+              >Creación</a
+            >
+            <a
+              class="sub-procesos"
+              href="../pantallas/definiciones/apoyo.html"
+              >Garantizar Apoyo</a
+            >
+            <a
+              class="sub-procesos"
+              href="../pantallas/definiciones/desarrollo.html"
+              >Desarrollo de Estrategias</a
+            >
           </div>
+
+        <div class="dropdown">
+            <button class="categoria">METAS ANUALES</button>
         </div>
-        <div class="container_anuales">
-          <div class="procesos categoria">METAS ANUALES</div>
+
+        <div class="dropdown">
+          <button class="categoria">REPORTES</button>
+          <div class="dropdown-content">
+            <a
+              class="sub-procesos"
+              href="../pantallas/definiciones/reportes.html"
+              >Reportes</a
+            >
+            <!-- se dirige a una pagina la cual tendra reporter anuales, semestrales, trimestrales y mensuales, junto con un boton para descargar archivo o imprimir archivo, estos archivos son los word que se encuentran en la hoja de andreyna que me envio al correo, los cuales separare segun si son anuales, semestrales, etc y seran para descargar. y en la de metas, solo las tablas con esa seccion de produccio n y etc que solo esta por darle forma y listo -->
         </div>
-        <div class="container_reportes">
-          <div class="procesos categoria">REPORTES</div>
-          <div class="sub procesos" onclick="">Objetivos Alcanzado</div>
-          <div class="sub procesos" onclick="">Reportes Actuales</div>
-          <div class="sub procesos" onclick="">Reportes</div>
+        
+      </section>
+
+      <section class="contenedor_metas dropdown-content">
+        <div class="contenedor-tabla">
+          <table class="tabla">
+            <tr>
+              <th class="celda-head">Producción</th>
+            </tr>
+            <tr>
+              <td class="celda">Fisica (Cant.): 14</td>
+            </tr>
+            <tr>
+              <td class="celda">Presupuestaria</td>
+            </tr>
+            <tr>
+              <td class="celda">(Bs.): 40.000.000.000,00</td>
+            </tr>
+          </table>
+        </div>
+        <div class="contenedor-tabla">
+          <table>
+            <tr>
+              <th class="celda-head">Formación e Investigación</th>
+            </tr>
+            <tr>
+              <td class="celda">Fisica (Cant.): 66</td>
+            </tr>
+            <tr>
+              <td class="celda">Presupuestaria</td>
+            </tr>
+            <tr>
+              <td class="celda">(Bs.): 6.000.000.000,00</td>
+            </tr>
+          </table>
+        </div>
+        <div class="contenedor-tabla">
+          <table>
+            <tr>
+              <th class="celda-head">Estimulo Creativo</th>
+            </tr>
+            <tr>
+              <td class="celda">Fisica (Cant.): 100</td>
+            </tr>
+            <tr>
+              <td class="celda">Presupuestaria</td>
+            </tr>
+            <tr>
+              <td class="celda">(Bs.): 19.050.000.000,00</td>
+            </tr>
+          </table>
+        </div>
+        <div class="contenedor-tabla">
+          <table>
+            <tr>
+              <th class="celda-head">Comunicación</th>
+            </tr>
+            <tr>
+              <td class="celda">Fisica (Cant.): 45</td>
+            </tr>
+            <tr>
+              <td class="celda">Presupuestaria</td>
+            </tr>
+            <tr>
+              <td class="celda">(Bs.): 6.000.000.000,00</td>
+            </tr>
+          </table>
+        </div>
+        <div class="contenedor-tabla">
+          <table>
+            <tr>
+              <th class="celda-head">Total Meta</th>
+            </tr>
+            <tr>
+              <td class="celda">Presupuestaria</td>
+            </tr>
+            <tr>
+              <td class="celda">(Bs.): 71.050.000.000,00</td>
+            </tr>
+          </table>
         </div>
       </section>
 

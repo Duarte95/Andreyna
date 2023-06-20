@@ -1,6 +1,8 @@
 .ingreso,
 .salir,
-.editar {
+.editar,
+.imprimir,
+.descargar {
   font-weight: bold;
   font-size: 14px;
 }
@@ -29,18 +31,32 @@
 
 .ingreso:hover,
 .salir:hover,
-.editar {
+.editar:hover,
+.imprimir:hover {
   cursor: pointer;
 }
 
 .ingreso:active,
-.editar:active {
+.editar:active,
+.imprimir:active {
   background-color: #505050;
   color: white;
 }
 
 .salir:active {
   background: darkred;
+}
+
+.descargar {
+  display: inline-block;
+  font-family: Arial;
+  background-color: #1c3653;
+  text-decoration: none;
+  color: white;
+}
+
+.descargar:active {
+  background-color: #014ba0;
 }
 
 @media screen and (min-width: 290px) {

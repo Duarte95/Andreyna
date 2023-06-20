@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Reportes</title>
+    <!-- HTML -->
+    <link rel="icon" href="../../img/favico.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../../css/base/reset.css" />
+    <link rel="stylesheet" href="../../css/base/base.css" />
+    <link rel="stylesheet" href="../../css/base/cabecera.css" />
+    <link rel="stylesheet" href="../../css/base/inputs-boton.css" />
+    <link rel="stylesheet" href="../../css/components/botonesRedondos.css" />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="../../css/base/tituloBlanco.css" />
+    <link rel="stylesheet" href="../../css/components/botones.css" />
+    <link rel="stylesheet" href="../../css/base/definiciones.css" />
+    <link rel="stylesheet" href="../../css/components/botones.css" />
+    <!-- Lib PDF.js-->
+    <script src="../../libs/pdf.js-master/src/pdf.js"></script>
+    <script src="../../libs/pdf.js-master/src/pdf.worker.js"></script>
+  </head>
+
+  <script src="../js/utilidades/nocopy.js"></script>
+
+  <body>
+    <header class="cabecera">
+      <img class="logo1" src="../../img/logo1.svg" alt="logo_IAEM" />
+
+      <div class="contenedor_titulos">
+        <h1 class="titulo">SAAAO</h1>
+        <p class="subtitulo">
+          Sistema de Automatización y Autogestión de Administración
+          Organizacional
+        </p>
+      </div>
+
+      <img class="logo2" src="../../img/logo2.svg" alt="logo_SAAAO" />
+    </header>
+
+    <hr />
+    <hr />
+
+    <main class="cuerpo">
+      <section class="container_archivos">
+        <h1 class="titulo-blanco">REPORTES</h1>
+
+        <div class="mensual">
+          <h2>Reporte Mensual</h2>
+          <a class="boton descargar" href="../../files/mensual.pdf" download
+            >Descargar</a
+          >
+          <button class="boton imprimir" onclick="imprimirArchivo()">
+            Imprimir
+          </button>
+        </div>
+
+        <div class="trimestral">
+          <h2>Reporte Trimestral</h2>
+          <a class="boton descargar" href="../../files/trimestral.pdf" download
+            >Descargar</a
+          >
+          <button class="boton imprimir" onclick="imprimirArchivo()">
+            Imprimir
+          </button>
+        </div>
+
+        <div class="semestral">
+          <h2>Reporte Semestral</h2>
+          <a class="boton descargar" href="../../files/semestral.pdf" download
+            >Descargar</a
+          >
+          <button class="boton imprimir" onclick="imprimirArchivo()">
+            Imprimir
+          </button>
+        </div>
+
+        <div class="anual">
+          <h2>Reporte Anual</h2>
+          <a class="boton descargar" href="../../files/anual.pdf" download
+            >Descargar</a
+          >
+          <button class="boton imprimir" onclick="imprimirArchivo()">
+            Imprimir
+          </button>
+        </div>
+      </section>
+
+      <section>
+        <div id="pdfContainer"></div>
+      </section>
+
+      <div class="container-botonBack">
+        <div class="redondo" onclick="goBack()">
+          <img src="../../img/GoBack.svg" alt="atras" class="goBack" />
+        </div>
+      </div>
+      <p class="texto size-little">ATRAS</p>
+      <button class="boton salir" data-salir>CERRAR SESION</button>
+    </main>
+    <footer class="creditos">
+      <p>Derechos reservados - &copy Copy Right 2023 - Antony Duarte</p>
+    </footer>
+    <script src="../../js/botones/botonBack.js"></script>
+    <script src="../../js/botones/cerrarSesion.js"></script>
+    <script src="../../js/botones/imprimir.js"></script>
+  </body>
+</html>
