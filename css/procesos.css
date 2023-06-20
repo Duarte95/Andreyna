@@ -1,4 +1,4 @@
-.dropdown-content .sub-procesos {
+/*.dropdown-content .sub-procesos {
   text-decoration: none;
   display: block;
 }
@@ -10,7 +10,7 @@
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
+*/
 /*/////////////////////////////////////////*/
 
 .seccion_procesos {
@@ -41,7 +41,7 @@
 }
 
 .dropdown-content {
-  display: none;
+  display: block;
 }
 
 .sub-procesos {
