@@ -26,8 +26,8 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 100px;
-  height: 40px;
+  width: 150px;
+  height: 50px;
   background-color: white;
   color: white;
   font-weight: bold;
@@ -35,9 +35,9 @@
   margin-bottom: 30px;
   margin: 10px 10px;
   border-radius: 10px;
-  padding: 5px;
   background: linear-gradient(135deg, rgb(181, 120, 255), rgb(150, 77, 240));
   cursor: pointer;
+  box-sizing: border-box;
 }
 
 .dropdown-content {
@@ -47,6 +47,14 @@
 .sub-procesos {
   color: black;
   background: linear-gradient(135deg, rgb(196, 147, 255), rgb(219, 189, 255));
+  text-decoration: none;
+  /*width: 146px;
+  height: 46px;*0
+}
+
+.categoria {
+  /*width: 150px;
+  height: 50px;*/
 }
 
 .contenedor_metas {
