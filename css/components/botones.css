@@ -59,6 +59,11 @@
   background-color: #014ba0;
 }
 
+.imprimir,
+.descargar {
+  margin: 5px;
+}
+
 @media screen and (min-width: 290px) {
   .salir {
     font-size: 10px;

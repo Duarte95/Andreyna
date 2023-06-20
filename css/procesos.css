@@ -49,6 +49,10 @@
   background: linear-gradient(135deg, rgb(196, 147, 255), rgb(219, 189, 255));
 }
 
+.contenedor_metas {
+  display: none;
+}
+
 @media screen and (min-width: 990px) {
   .seccion_procesos {
     flex-flow: row;
