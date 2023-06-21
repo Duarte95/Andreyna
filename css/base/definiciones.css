@@ -1,5 +1,5 @@
 .definiciones {
-  width: 80%;
+  width: 90%;
   margin-right: auto;
   margin-left: auto;
 }
@@ -16,6 +16,7 @@
   border-radius: 20px;
   padding: 15px;
   line-height: 1.25;
+  box-sizing: border-box;
 }
 
 .parrafo {
@@ -28,6 +29,7 @@
   list-style-type: disc;
   padding-left: 20px;
   margin-top: 20px;
+  text-align: justify;
 }
 
 .sub-parrafo {
@@ -35,6 +37,5 @@
 } 
 
 .vineta {
-  text-align: justify;
   margin-bottom: 10px;
 }
