@@ -4,11 +4,11 @@ Queda por ajustar detalles como:
 
 - Estilizar para escritorio y movil la seccion REPORTES, la cual esta funcional, solo queda ajuste visual. CSS
 
-- Seccion PROCESOS, queda ajustar visual y efecto de desplegar lista al hacer hover o click sobre las categorias principales.
+- Seccion PROCESOS, efecto desplegar con hover mientras mamtiene el mouse y 1 a la vez no todos (prioridad media)
 
 - Diseñar la parte de la seccion METAS, donde se reflejarans tablas con valores, queda ajustar todo el visual con CSS.
 
-- Ajutar boton de CERRAR SESION en los HTML de la carpeta definiciones, se puede realizar con condiciones if, else dentro del JS, botonSalir, dentro especifica la ruta para cada condicion. (en caso de daro problema y acortarse el tiempo, eliminar boton CERRAR SESION, obligara al usuario a volver atras para cerrar sesion)
+- Ajutar boton de CERRAR SESION en los HTML corregido, solo que al volver atras 2 veces causa error en vez de caer al inicio, pero funcional.
 
 - Pulir JS y separar por modulos, pero tener cuidado con la funcion ValidarRegex() la cual, se elimina o queda deshabilitada al convertir ese archivo en modulo o exportar e importar.
 

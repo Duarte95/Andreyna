@@ -34,7 +34,12 @@ botonSalir.addEventListener('click', function() {
   
   // Redireccionar al usuario a la nueva ruta
   window.location.href = nuevaRuta;
-  
-  // Reemplazar la URL actual en el historial del navegador
+  //
+//  if (rutaActual.includes('/definiciones/')) {
+//    host.replaceState(null, null, '../singreso_sostema.html');
+//  }else {
+      // Reemplazar la URL actual en el historial del navegador
   history.replaceState(null, null, '../pantallas/ingreso_sistema.html');
+//  }
+  
 });
