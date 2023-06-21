@@ -50,3 +50,64 @@ categorias.forEach((categoria, index) => {
     }
   });
 });
+
+//CON HOVER
+/*
+// Obtener todos los elementos de categoría
+const categorias = document.querySelectorAll(".categoria");
+const contenedores = document.querySelectorAll(".dropdown-content");
+
+// Agregar los eventos hover a cada categoría
+categorias.forEach((categoria, index) => {
+  categoria.addEventListener("mouseenter", () => {
+    // Desactivar la clase 'show' en todos los contenedores
+    contenedores.forEach((contenedor) => {
+      contenedor.classList.remove("show");
+    });
+
+    // Activar la clase 'show' en el contenedor correspondiente
+    contenedores[index].classList.add("show");
+  });
+
+  categoria.addEventListener("mouseleave", () => {
+    // Remover la clase 'show' en el contenedor correspondiente
+    contenedores[index].classList.remove("show");
+  });
+});
+*/
+
+/*
+// Obtener todos los elementos de categoría
+const categorias = document.querySelectorAll(".categoria");
+const contenedores = document.querySelectorAll(".dropdown-content");
+
+// Agregar los eventos click y hover a cada categoría
+categorias.forEach((categoria, index) => {
+  categoria.addEventListener("click", () => {
+    toggleClaseShow(index);
+  });
+
+  categoria.addEventListener("mouseenter", () => {
+    agregarClaseShow(index);
+  });
+
+  categoria.addEventListener("mouseleave", () => {
+    removerClaseShow(index);
+  });
+});
+
+// Función para agregar la clase 'show' al contenedor correspondiente
+function agregarClaseShow(index) {
+  contenedores[index].classList.add("show");
+}
+
+// Función para remover la clase 'show' del contenedor correspondiente
+function removerClaseShow(index) {
+  contenedores[index].classList.remove("show");
+}
+
+// Función para alternar la clase 'show' del contenedor correspondiente
+function toggleClaseShow(index) {
+  contenedores[index].classList.toggle("show");
+}
+*/
