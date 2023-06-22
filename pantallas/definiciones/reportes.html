@@ -43,68 +43,71 @@
     <hr />
 
     <main class="cuerpo">
-    <section>
-      <div class="container_archivos">
+      <section>
         <h1 class="titulo-blanco">REPORTES</h1>
+        <div class="container_archivos">
+          <div class="mensual reporte">
+            <h2 class="texto-negro">Reporte Mensual</h2>
+            <a class="boton descargar" href="../../files/mensual.pdf" download
+              >Descargar</a
+            >
+            <button
+              class="boton imprimir"
+              onclick="imprimirArchivo('../../files/mensual.pdf')"
+            >
+              Imprimir
+            </button>
+          </div>
 
-        <div class="mensual reporte">
-          <h2 class="texto-negro">Reporte Mensual</h2>
-          <a class="boton descargar" href="../../files/mensual.pdf" download
-            >Descargar</a
-          >
-          <button
-            class="boton imprimir"
-            onclick="imprimirArchivo('../../files/mensual.pdf')"
-          >
-            Imprimir
-          </button>
-        </div>
+          <div class="trimestral reporte">
+            <h2 class="texto-negro">Reporte Trimestral</h2>
+            <a
+              class="boton descargar"
+              href="../../files/trimestral.pdf"
+              download
+              >Descargar</a
+            >
+            <button
+              class="boton imprimir"
+              onclick="imprimirArchivo('../../files/trimestral.pdf')"
+            >
+              Imprimir
+            </button>
+          </div>
 
-        <div class="trimestral reporte">
-          <h2 class="texto-negro">Reporte Trimestral</h2>
-          <a class="boton descargar" href="../../files/trimestral.pdf" download
-            >Descargar</a
-          >
-          <button
-            class="boton imprimir"
-            onclick="imprimirArchivo('../../files/trimestral.pdf')"
-          >
-            Imprimir
-          </button>
-        </div>
+          <div class="semestral reporte">
+            <h2 class="texto-negro">Reporte Semestral</h2>
+            <a class="boton descargar" href="../../files/semestral.pdf" download
+              >Descargar</a
+            >
+            <button
+              class="boton imprimir"
+              onclick="imprimirArchivo('../../files/semestral.pdf')"
+            >
+              Imprimir
+            </button>
+          </div>
 
-        <div class="semestral reporte">
-          <h2 class="texto-negro">Reporte Semestral</h2>
-          <a class="boton descargar" href="../../files/semestral.pdf" download
-            >Descargar</a
-          >
-          <button
-            class="boton imprimir"
-            onclick="imprimirArchivo('../../files/semestral.pdf')"
-          >
-            Imprimir
-          </button>
+          <div class="anual reporte">
+            <h2 class="texto-negro">Reporte Anual</h2>
+            <a class="boton descargar" href="../../files/anual.pdf" download
+              >Descargar</a
+            >
+            <button
+              class="boton imprimir"
+              onclick="imprimirArchivo('../../files/anual.pdf')"
+            >
+              Imprimir
+            </button>
+          </div>
         </div>
-
-        <div class="anual reporte">
-          <h2 class="texto-negro">Reporte Anual</h2>
-          <a class="boton descargar" href="../../files/anual.pdf" download
-            >Descargar</a
-          >
-          <button
-            class="boton imprimir"
-            onclick="imprimirArchivo('../../files/anual.pdf')"
-          >
-            Imprimir
-          </button>
-        </div>
-      </div>
-    </section>
+      </section>
 
       <section>
         <div id="pdfContainer"></div>
       </section>
-
+    </main>
+    <footer class="creditos">
       <div class="container-botonBack">
         <div class="redondo" onclick="goBack()">
           <img src="../../img/GoBack.svg" alt="atras" class="goBack" />
@@ -112,9 +115,9 @@
       </div>
       <p class="texto size-little">ATRAS</p>
       <button class="boton salir" data-salir>CERRAR SESION</button>
-    </main>
-    <footer class="creditos">
-      <p>Derechos reservados - &copy Copy Right 2023 - Antony Duarte</p>
+      <p class="texto-creditos">
+        Derechos reservados - &copy Copy Right 2023 - Antony Duarte
+      </p>
     </footer>
     <script src="../../js/botones/botonBack.js"></script>
     <script src="../../js/botones/cerrarSesion.js"></script>
