@@ -1,4 +1,4 @@
-/*
+
 function cargarArchivoPDF(urlArchivo) {
   // Elemento contenedor del PDF
   const container = document.getElementById("pdfContainer");
@@ -27,14 +27,14 @@ function cargarArchivoPDF(urlArchivo) {
   });
 }
 
-function imprimirArchivo(urlArchivo) {
+/*function imprimirArchivo(urlArchivo) {
   const iframe = document.createElement("iframe");
   iframe.src = urlArchivo;
   iframe.style.display = "none";
   document.body.appendChild(iframe);
   iframe.contentWindow.print();
 }
-*/
+*///este es el original
 
 function imprimirArchivo(urlArchivo) {
   const nuevaVentana = window.open(urlArchivo, "_blank");

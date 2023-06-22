@@ -64,16 +64,6 @@
   margin: 5px;
 }
 
-/*
-.boton.salir {
-  position: sticky;
-  bottom: 20px; /* Ajusta esta propiedad según sea necesario
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 9999; /* Ajusta este valor si es necesario 
-}
-*/
-
 @media screen and (min-width: 290px) {
   .salir {
     font-size: 10px;

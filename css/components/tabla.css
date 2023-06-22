@@ -1,0 +1,23 @@
+.contenedor-tabla{
+  margin: 10px 0;
+}
+
+.tabla{
+  border: 2px solid black;
+  width: 200px;
+  box-sizing: border-box;
+}
+
+.celda-head{
+  background-color: darkorange;
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.celda{
+  background-color: white;
+  text-align: center;
+  padding: 5px;
+  border: 2px solid black;
+}

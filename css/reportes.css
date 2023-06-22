@@ -1,5 +1,13 @@
+.container_archivos{
+  display: grid;
+  place-content: center;
+}
+
 .reporte {
+  display: flex;
+  flex-flow: column;
   text-align: center;
+  width: 200px;
 }
 
 .texto-negro {
@@ -11,4 +19,11 @@
 #pdfContainer {
   max-width: 100%;
   max-height: 100%;
+}
+
+@media screen and (min-width: 900px){
+  .container_archivos{
+    display: flex;
+    justify-content: space-between;
+  }
 }

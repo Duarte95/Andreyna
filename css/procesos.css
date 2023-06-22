@@ -27,6 +27,7 @@
 
 .dropdown-content {
   display: none;
+  width: 200px;
 }
 
 .sub-procesos {
@@ -40,10 +41,6 @@
 .categoria {
   /*width: 150px;
   height: 50px;*/
-}
-
-.contenedor_metas {
-  display: none;
 }
 
 .show {
