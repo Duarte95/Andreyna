@@ -1,0 +1,23 @@
+.contacto {
+  margin: 0 20px -20px 20px;
+  width: 30px;
+  height: auto;
+  cursor: pointer;
+  filter: grayscale(100%) opacity(30%);
+}
+
+.correo {
+  color: #b42119;
+}
+
+.git {
+  color: #b83fea;
+}
+
+.in {
+  color: #0166c7;
+}
+
+.contacto:hover {
+  filter: none;
+}
