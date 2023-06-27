@@ -7,7 +7,7 @@ function correo() {
 }
 
 function linkedin() {
-  window.open("https://linkedin.com/");
+  window.open("https://www.linkedin.com/in/ayduarte95/");
 }
 
 /*
