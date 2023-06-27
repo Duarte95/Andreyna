@@ -7,15 +7,15 @@
   border-radius: 50%;
 }
 
-.correo {
+.correo:hover {
   box-shadow: 0 0 5px #b42119;
 }
 
-.git {
+.git:hover {
   box-shadow: 0 0 5px #b83fea;
 }
 
-.in {
+.in:hover {
   box-shadow: 0 0 5px white;
 }
 
