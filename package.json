@@ -1,8 +1,8 @@
 {
   "name": "andreyna",
   "version": "1.0.0",
-  "description": "Queda por ajustar detalles como:",
-  "main": "index.js",
+  "description": "SAAO",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
